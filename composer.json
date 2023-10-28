@@ -1,6 +1,6 @@
 {
-    "name": "niraj-shah/laravel-azure-face-api",
-    "description": "Laravel package to access Azure Cognitive Face APIs",
+    "name": "inquid/laravel-azure-face-api",
+    "description": "Laravel package to access Azure Cognitive Face APIs and do Facial Recognition",
     "type": "library",
     "keywords": [
         "face",
@@ -17,6 +17,10 @@
         {
             "name": "Niraj Shah",
             "email": "niraj@webniraj.com"
+        },
+        {
+            "name": "Inquid",
+            "email": "contact@inquid.co"
         }
     ],
     "autoload": {
