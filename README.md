@@ -8,6 +8,13 @@ Using composer:
 
 Run `composer update` to update or install the library.
 
+### Set env variables
+```
+# Azure Cognitive Services
+AZURE_COGNITIVE_API_KEY_FACE={your_api_key}
+AZURE_COGNITIVE_ENDPOINT_FACE=https://yourdomain.cognitiveservices.azure.com/
+```
+
 ### Update Providers
 
 Update the `config/app.php` file to add the following line to the `providers` array:
