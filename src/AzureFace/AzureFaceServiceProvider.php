@@ -12,7 +12,7 @@ class AzureFaceServiceProvider extends ServiceProvider {
    */
   public function boot()
   {
-      $this->publishes([__DIR__ . '/config/config.php' => config_path('azure-face.php')], 'azure-face');
+      $this->publishes([__DIR__ . '/config/cognitive.php' => config_path('azure-face.php')], 'azure-face');
   }
 
   /**
@@ -22,9 +22,6 @@ class AzureFaceServiceProvider extends ServiceProvider {
    */
   public function register()
   {
-      $this->mergeConfigFrom(__DIR__ . '/config/config.php', 'azure-face');
-      $this->mergeConfigFrom(__DIR__ . '/config/speech.php', 'azure-speech');
-
       $this->app->singleton('niraj-shah.laravel-azure-face-api', function ($app) {
           return new AzureFaceClient(
             $app['config']->get('cognitive.face.api_key'),
