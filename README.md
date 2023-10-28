@@ -2,16 +2,9 @@
 
 ### Install Library
 
-Using composer, manually add the library to the `composer.json` file:
+Using composer:
 
-```json
-"repositories": [
-    {
-        "url": "git@github.com:niraj-shah/laravel-azure-face-api.git",
-        "type": "git"
-    }
-],
-```
+`composer require inquid/laravel-azure-face-api`
 
 Run `composer update` to update or install the library.
 
